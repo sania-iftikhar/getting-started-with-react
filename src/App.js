@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import Header from "./Components/Header";
+import "./index.css";
 function App() {
+  // const x = 5;
+  // let text = "Hello";
+  // if (x > 5) {
+  //   text = "Goodbye";
+  // }
+  // const myEl = (
+  //   <ul>
+  //     <li>React</li>
+  //     <li>JS</li>
+  //   </ul>
+  // );
+
+  const myEl = React.createElement("h1", {}, "I dont want to use JSX");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title="Task Tracker" />
     </div>
   );
 }
